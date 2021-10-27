@@ -9,11 +9,16 @@ import Sidebar from "./components/Sidebar";
 export class App extends Component {
   render(){
   return (
-    <div className="App">
+    <div className="App" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
      <Header></Header>
+    <div style={{display: "flex"}}>
+
      <Sidebar></Sidebar>
+      <div style={{width: "75%"}}>
      <Body></Body>
      <Box></Box>
+      </div>
+    </div>
      <Footer></Footer>
     </div>
   );
